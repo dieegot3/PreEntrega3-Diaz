@@ -114,7 +114,7 @@ function showCatalogue(array) {
     newGroupGameDiv.className = "group__game";
     newGroupGameDiv.innerHTML = `
         <div id="${game.id}" class="group__game">
-        <img class="group__game__img" src="../images/${game.img}" alt="Miniatura del juego "${game.title}">
+        <img class="group__game__img" src="images/${game.img}" alt="Miniatura del juego "${game.title}">
         <div class="group__game__info">
           <h4>${game.title}</h4>
           <p class="group__game__info__time">$${game.price}</p>
@@ -148,7 +148,7 @@ function addToCart(game) {
       confirmButtonColor: "green",
       timer: 3000,
       width: 350,
-      imageUrl: `../images/${game.img}`,
+      imageUrl: `images/${game.img}`,
       imageHeight: 150,
     });
   } else {
@@ -179,7 +179,7 @@ function loadGamesInCart(array) {
     //Creacion de la card con la información del juego existente en el carrito
     modalBodyCart.innerHTML += `
         <div class="card border-primary mb-3" id ="gameCart${gameCart.id}" >
-            <img class="card-img-top" src="../images/${gameCart.img}" alt="${gameCart.title}">
+            <img class="card-img-top" src="images/${gameCart.img}" alt="${gameCart.title}">
             <div class="card-body" style="display: flex; justify-content: space-between;">
                     <div>
             <h4 class="card-title" style="color: black">${gameCart.title}</h4>
